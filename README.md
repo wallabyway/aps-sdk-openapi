@@ -2,6 +2,26 @@
 
 This repository contains the OpenAPI specifications used for generating the APS SDKs.
 
+## 📚 How to Use in Cursor IDE
+
+If you are using Cursor IDE, you can add the APS API documentation to your workspace:
+
+1. Open **Settings** ➔ **Features** ➔ Scroll down to **Docs**.
+2. Click **Add new doc**.
+3. Paste the following URL when prompted:
+
+```
+https://wallabyway.github.io/aps-sdk-openapi/aps-llms.txt
+```
+
+<img width="883" alt="Image" src="https://github.com/user-attachments/assets/fb50d8f8-3e59-498d-a577-5af3cd358e10" />
+
+
+4. Once added, in the chat/agent area, click `@docs` ➔ select **APS SDK OpenAPI** to reference the APIs.
+
+This will allow Cursor's agent to access APS API documentation when answering your questions.
+
+
 ## What is OpenAPI?
 
 From the [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification):
