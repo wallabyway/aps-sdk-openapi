@@ -3,7 +3,8 @@
 ## Core Authentication
 - [Authentication API v2](https://raw.githubusercontent.com/wallabyway/aps-sdk-openapi/main/authentication/authentication.yaml): OAuth 2.0 token & user profile endpoints
 - [Secure Service Accounts (SSA)](https://raw.githubusercontent.com/wallabyway/aps-sdk-openapi/main/authentication/ssa.yaml): Server‑to‑server auth flows
-- [Secure Service Accounts Example for creating SA accounts, and generating 3LO access tokens in 3 languages (SSA)](https://aps.autodesk.com/en/docs/ssa/v1/tutorials/getting-started-with-ssa/about-this-walkthrough/)
+- [Secure Service Accounts Example for creating SA accounts, and generating 3LO access tokens in 3 languages (SSA)](https://developer.doc.autodesk.com/bPlouYTd/cloud-platform-ssa-docs-main-460369/ssa/v1/tutorials/getting-started-with-ssa/about-this-walkthrough.html)
+
 ## Data & Model
 - [Data Management API](https://raw.githubusercontent.com/wallabyway/aps-sdk-openapi/main/datamanagement/datamanagement.yaml): Hubs, projects, folders, versions & objects
 - [Model Derivative API](https://raw.githubusercontent.com/wallabyway/aps-sdk-openapi/main/modelderivative/modelderivative.yaml): Translate & extract metadata, convert designs
