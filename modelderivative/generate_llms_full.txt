@@ -1,0 +1,42 @@
+import requests
+import re
+
+INPUT_URL = "https://wallabyway.github.io/aps-sdk-openapi/llms.txt"
+OUTPUT_FILE = "llms-full.txt"
+
+def extract_title_and_url(line):
+    match = re.match(r"- \[([^\]]+)\]\((https?://[^\)]+)\)", line)
+    return match.groups() if match else (None, None)
+
+def download_yaml(url):
+    try:
+        resp = requests.get(url)
+        resp.raise_for_status()
+        return resp.text
+    except Exception as e:
+        return f"# ERROR: Failed to fetch {url}\n# {str(e)}"
+
+def main():
+    print(f"Downloading: {INPUT_URL}")
+    response = requests.get(INPUT_URL)
+    response.raise_for_status()
+
+    lines = response.text.splitlines()
+    expanded_lines = []
+
+    for line in lines:
+        title, url = extract_title_and_url(line)
+        if title and url:
+            print(f"Fetching: {title} from {url}")
+            yaml_content = download_yaml(url)
+            expanded_lines.append(f"# {title}\n{yaml_content}\n")
+        else:
+            expanded_lines.append(line)
+
+    with open(OUTPUT_FILE, "w") as f:
+        f.write("\n".join(expanded_lines))
+
+    print(f"✅ Full expanded content written to {OUTPUT_FILE}")
+
+if __name__ == "__main__":
+    main()
