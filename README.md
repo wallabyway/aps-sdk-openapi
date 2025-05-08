@@ -11,8 +11,10 @@ If you are using Cursor IDE, you can add the APS API documentation to your works
 3. Paste the following URL when prompted:
 
 ```
-https://wallabyway.github.io/aps-sdk-openapi/aps-llms.txt
+https://wallabyway.github.io/aps-sdk-openapi/llms.txt
 ```
+
+listed on https://llmstxthub.com
 
 <img width="883" alt="Image" src="https://github.com/user-attachments/assets/fb50d8f8-3e59-498d-a577-5af3cd358e10" />
 
